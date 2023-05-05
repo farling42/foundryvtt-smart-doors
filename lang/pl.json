@@ -1,1 +1,41 @@
-{}
+{
+	"smart-doors": {
+		"keybindings": {
+			"toggleSecretDoor": {
+				"name": "Przełącznik sekretnych drzwi",
+				"hint": "Przytrzymując klawisz i klikając na drzwiach przełączasz typ między normalnymi i sekretnymi drzwiami."
+			}
+		},
+		"settings": {
+			"doorControlSizeFactor": {
+				"name": "Współczynnik wielkości drzwi",
+				"hint": "Określa, o jaki współczynnik powinien być skalowany rozmiar ikon sterowania drzwiami."
+			},
+			"highlightSecretDoors": {
+				"name": "Barwienie sekretnych drzwi",
+				"hint": "Pomaluj sekretne drzwi na inny kolor na ekranie GM, aby odróżnić je od zwykłych drzwi."
+			},
+			"lockedDoorAlert": {
+				"name": "Alarm o zablokowanych drzwiach",
+				"hint": "Wysyła wiadomość na czacie, gdy gracz próbował otworzyć zablokowane drzwi."
+			},
+			"synchronizedDoors": {
+				"name": "Drzwi zsynchronizowane",
+				"hint": "Synchronizacja stanu wielu drzwi."
+			}
+		},
+		"ui": {
+			"lockedDoorAlert": "Próbowałem otworzyć zamknięte drzwi",
+			"messages": {
+				"migrationDone": "Smart Doors pomyślnie zmigrował do wersji {version}.",
+				"migrating": "Migracja Smart Doors do wersji {wersja}. Proszę nie zamykać aplikacji.",
+				"unknownVersion": "Migracja Smart Doors nie powiodła się z błędem: Unknown Version {version}. Proszę zgłosić to do trackera problemów Smart Doors. Aby zapobiec możliwej utracie danych, nie używaj tej wtyczki, dopóki ten błąd nie zostanie naprawiony."
+			},
+			"synchronizedDoors": {
+				"description": "Zmiany stanu drzwi w tej samej grupie synchronizacyjnej będą synchronizowane na wszystkich scenach. Pozostawić puste, aby wyłączyć synchronizację dla tych drzwi.",
+				"groupName": "Grupa synchronizacji",
+				"synchronizeSecretStatus": "Synchronizacja sekretnego statusu"
+			}
+		}
+	}
+}
