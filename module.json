@@ -45,11 +45,11 @@
 			"path": "lang/pt-BR.json"
 		}
 	],
-	"url": "https://github.com/manuelVo/foundryvtt-smart-doors",
-	"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-smart-doors/master/module.json",
-	"download": "https://github.com/manuelVo/foundryvtt-smart-doors/archive/v1.4.1.zip",
-	"readme": "https://github.com/manuelVo/foundryvtt-smart-doors/blob/master/README.md",
-	"changelog": "https://github.com/manuelVo/foundryvtt-smart-doors/blob/master/CHANGELOG.md",
-	"bugs": "https://github.com/manuelVo/foundryvtt-smart-doors/issues",
+	"url": "https://github.com/farling42/foundryvtt-smart-doors",
+	"manifest": "https://raw.githubusercontent.com/farling42/foundryvtt-smart-doors/master/module.json",
+	"download": "https://github.com/farling42/foundryvtt-smart-doors/archive/v1.4.1.zip",
+	"readme": "https://github.com/farling42/foundryvtt-smart-doors/blob/master/README.md",
+	"changelog": "https://github.com/farling42/foundryvtt-smart-doors/blob/master/CHANGELOG.md",
+	"bugs": "https://github.com/farling42/foundryvtt-smart-doors/issues",
 	"allowBugReporter": true
 }
