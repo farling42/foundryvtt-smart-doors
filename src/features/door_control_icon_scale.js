@@ -32,6 +32,7 @@ export function onDoorControlPostDraw() {
 
 // Resizes the door control according to the grid size
 function fixDoorControlSize(control) {
+    // see DoorControl.draw()
 	let gridSize = control.wall.scene.grid.size;
 	gridSize *= game.settings.get(settingsKey, "doorControlSizeFactor");
 	control.icon.width = control.icon.height = gridSize * 0.4;

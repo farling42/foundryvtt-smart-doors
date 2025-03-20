@@ -33,7 +33,7 @@ Hooks.on("canvasReady", HighlightSecretDoors.onCanvasReady);
 Hooks.on("updateWall", HighlightSecretDoors.onUpdateWall);
 
 // Inject our custom settings into the WallConfig dialog
-Hooks.on("renderWallConfig", SynchronizedDoors.onRederWallConfig);
+Hooks.on("renderWallConfig", SynchronizedDoors.onRenderWallConfig);
 
 // Hook the update function of the WallConfig dialog so we can store our custom data
 function hookWallConfigUpdate() {

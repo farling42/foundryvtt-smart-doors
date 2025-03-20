@@ -2,7 +2,7 @@ import {settingsKey} from "../settings.js";
 import * as Util from "../util.js";
 
 // Inject settings for synchronized doors
-export function onRederWallConfig(wallConfig, html, data) {
+export function onRenderWallConfig(wallConfig, html, data) {
 	if (game.settings.get(settingsKey, "synchronizedDoors") && data.data.door) {
 		// Inject settings
 		const synchronizedSettings = `
