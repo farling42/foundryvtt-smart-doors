@@ -22,7 +22,7 @@ export function onRederWallConfig(wallConfig, html, data) {
 		`;
 		html.find(".form-group").last().after(synchronizedSettings);
 
-		const smartdoorsData = data.object.flags.smartdoors;
+		const smartdoorsData = data.document.flags.smartdoors;
 		// Fill the injected input fields with values
 		const input = name => html.find(`input[name="${name}"]`); // input is a helper function to search for a input field by it's name
 		input("synchronizationGroup").prop("value", smartdoorsData?.synchronizationGroup);

@@ -2,10 +2,10 @@
 	"id": "smart-doors",
 	"title": "Smart Doors",
 	"description": "Makes doors smarter. Allows doors to synchronize across multiple scenes and sends chat messages when players try to open locked doors.",
-	"version": "1.4.1",
+	"version": "#{VERSION}#",
 	"compatibility": {
-		"minimum": 10,
-		"verified": 10
+		"minimum": 12,
+		"verified": 12
 	},
 	"authors": [
 		{
@@ -45,11 +45,10 @@
 			"path": "lang/pt-BR.json"
 		}
 	],
-	"url": "https://github.com/farling42/foundryvtt-smart-doors",
-	"manifest": "https://raw.githubusercontent.com/farling42/foundryvtt-smart-doors/master/module.json",
-	"download": "https://github.com/farling42/foundryvtt-smart-doors/archive/v1.4.1.zip",
+	"url": "#{URL}#",
+	"manifest": "#{MANIFEST}#",
+	"download": "#{DOWNLOAD}#",
 	"readme": "https://github.com/farling42/foundryvtt-smart-doors/blob/master/README.md",
 	"changelog": "https://github.com/farling42/foundryvtt-smart-doors/blob/master/CHANGELOG.md",
-	"bugs": "https://github.com/farling42/foundryvtt-smart-doors/issues",
-	"allowBugReporter": true
+	"bugs": "https://github.com/farling42/foundryvtt-smart-doors/issues"
 }
