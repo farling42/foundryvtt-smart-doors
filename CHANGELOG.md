@@ -1,3 +1,11 @@
+## 1.6.0
+### Compatibility
+- Smart Doors is now compatible with Foundry v13
+
+## 1.5.0
+### Compatibility
+- Smart Doors is now compatible with Foundry v12
+
 ## 1.4.1
 ### Translation
 - Added portugese (Brazil) translation (thanks eunaumtenhoid!)
