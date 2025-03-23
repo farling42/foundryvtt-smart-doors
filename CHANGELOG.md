@@ -1,3 +1,6 @@
+## 1.6.1
+- More compatibility with Foundry V13, although editing multiple doors at once won't copy settings from existing groups properly.
+
 ## 1.6.0
 ### Compatibility
 - Smart Doors is now compatible with Foundry v13
