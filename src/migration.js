@@ -20,8 +20,7 @@ export function performMigrations() {
 		// Make a dictionary that maps all door ids to their scenes
 		const walls = game.scenes.reduce((dict, scene) => {
 			scene.walls.forEach(wall => {
-				if (!wall.door) return;
-				dict[wall.id] = scene.id;
+				if (wall.door !== CONST.WALL_DOOR_TYPES.NONE) dict[wall.id] = scene.id;
 			});
 			return dict;
 		}, {});
@@ -50,7 +49,7 @@ export function performMigrations() {
 			game.i18n.format("smart-doors.ui.messages.migrationDone", {version: dataVersion}),
 		);
 	}
-	if (dataVersion != currentDataVersion)
+	if (dataVersion !== currentDataVersion)
 		ui.notifications.error(
 			game.i18n.format("smart-doors.ui.messages.unknownVersion", {version: dataVersion}),
 			{permanent: true},
