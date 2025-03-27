@@ -100,6 +100,9 @@ export async function onWallConfigUpdate(event, formData) {
     const { synchronizeSecretStatus, synchronizationGroup } = formData;
     const updateData = { flags: { smartdoors: { synchronizationGroup: synchronizationGroup } } };
     let ids = this.editTargets ?? [];
+    if (ids instanceof Set) {
+        ids = [...ids.map(wall => wall.id)]; // Foundry V13
+    }
     if (ids.length === 0) {
         ids = [this.document.id];
     }
