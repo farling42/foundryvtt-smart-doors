@@ -1,3 +1,6 @@
+## 1.6.2
+- Configuring multiple selected walls works correctly on Foundry V13.
+
 ## 1.6.1
 - More compatibility with Foundry V13, although editing multiple doors at once won't copy settings from existing groups properly.
 
