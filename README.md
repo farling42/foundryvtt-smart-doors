@@ -6,18 +6,18 @@ Makes doors smarter. Allows doors to synchronize across multiple scenes and send
 ## Feature overview
 
 ### Consistent Door Control Size
-![Consistent Door Control Size demonstration](https://raw.githubusercontent.com/manuelVo/foundryvtt-smart-doors/e5b5c336d64f2b379914648f57aa07b6a69aadf1/media/door_control_size.webp)
+![Consistent Door Control Size demonstration](https://raw.githubusercontent.com/farling42/foundryvtt-smart-doors/e5b5c336d64f2b379914648f57aa07b6a69aadf1/media/door_control_size.webp)
 
 Door Control icons will be rendered the same size in every scene, regardless of the configured grid size. The size of the icons is configurable.
 
 ### Toggle Secret Doors
-![Toggle Secret Doors demonstration](https://raw.githubusercontent.com/manuelVo/foundryvtt-smart-doors/da5872042ea81e2f41875a193d161331a81a2b6d/media/secret_door_toggle.webp)
+![Toggle Secret Doors demonstration](https://raw.githubusercontent.com/farling42/foundryvtt-smart-doors/da5872042ea81e2f41875a193d161331a81a2b6d/media/secret_door_toggle.webp)
 
 Easily reveal secret doors to players. Alt+left click secrets doors to turn them into regular doors. Alt+left click can also be done on normal doors to turn them into secret doors. The keybinding for this feature can be reconfigured.
 
 
 ### Locked Door Alerts
-![Locked Door Alerts demonstration](https://raw.githubusercontent.com/manuelVo/foundryvtt-smart-doors/360d724240634dbc6cc493a3b62243a8b28b7056/media/locked_door_alert.webp)
+![Locked Door Alerts demonstration](https://raw.githubusercontent.com/farling42/foundryvtt-smart-doors/360d724240634dbc6cc493a3b62243a8b28b7056/media/locked_door_alert.webp)
 
 Keep everyone informed who tried to open which door. Whenever a player tries to open a door that is locked, a chat message stating that fact will be sent to all players. Additionally the door locked sound will be played for everyone. When the chat message is hovered with the mouse, the door that the player tried to open will be highlighted.
 
@@ -28,7 +28,7 @@ This tints secret doors in a gray shade to make them easier to discern from regu
 
 
 ### Synchronized Doors
-![Synchronized Doors demonstration](https://raw.githubusercontent.com/manuelVo/foundryvtt-smart-doors/360d724240634dbc6cc493a3b62243a8b28b7056/media/synchronized_doors.webp)
+![Synchronized Doors demonstration](https://raw.githubusercontent.com/farling42/foundryvtt-smart-doors/360d724240634dbc6cc493a3b62243a8b28b7056/media/synchronized_doors.webp)
 
 Keep multiple doors in sync - even across different scenes. Example use cases:
 - A tavern has an outdoor and an indoor scene. If a player opens the entrance door on the outdoor map, the entrance door in the indoor map will be opened as well
