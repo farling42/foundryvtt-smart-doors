@@ -48,22 +48,33 @@ function hookWallConfigUpdate() {
             },
             "WRAPPER",
         );
-    else
+    else {
         libWrapper.register(
             "smart-doors",
-            "WallConfig.prototype._processSubmitData",
+            "foundry.applications.sheets.WallConfig.prototype._processSubmitData",
             async function (wrapped, event, form, submitData, updateOptions) {
                 await wrapped(event, form, submitData, updateOptions);
                 return SynchronizedDoors.onWallConfigUpdate.call(this, event, submitData.flags?.smartdoors);
             },
             "WRAPPER",
         );
+        libWrapper.register(
+            "smart-doors",
+            "foundry.applications.sheets.WallConfig.prototype._onChangeForm",
+            async function (wrapped, _formConfig, event) {
+                await wrapped(_formConfig, event);
+                return SynchronizedDoors.onWallConfigChange.call(this, _formConfig, event);
+            },
+            "WRAPPER",
+        );
+    }
 }
 
 function hookDoorControlDraw() {
+    const prefix = (game.release.generation < 13) ? "" : "foundry.canvas.containers.";
     libWrapper.register(
         "smart-doors",
-        "DoorControl.prototype.draw",
+        `${prefix}DoorControl.prototype.draw`,
         async function (wrapped) {
             const result = await wrapped();
             DoorControlIconScale.onDoorControlPostDraw.call(this);
@@ -76,10 +87,11 @@ function hookDoorControlDraw() {
 // Hook mouse events on DoorControls to perform our logic.
 // If we successfully handled the event block the original handler. Forward the event otherwise.
 function hookDoorEvents() {
+    const prefix = (game.release.generation < 13) ? "" : "foundry.canvas.containers.";
     // Replace the original mousedown handler with our custom one
     libWrapper.register(
         "smart-doors",
-        "DoorControl.prototype._onMouseDown",
+        `${prefix}DoorControl.prototype._onMouseDown`,
         function (wrapped, event) {
             // Call our handler first. Only allow the original handler to run if our handler returns true
             const eventHandled = onDoorMouseDown.call(this, event);
@@ -92,7 +104,7 @@ function hookDoorEvents() {
     // Replace the original rightdown handler with our custom one
     libWrapper.register(
         "smart-doors",
-        "DoorControl.prototype._onRightDown",
+        `${prefix}DoorControl.prototype._onRightDown`,
         function (wrapped, event) {
             // Call our handler first. Only allow the original handler to run if our handler returns true
             const eventHandled = onDoorRightDown.call(this, event);

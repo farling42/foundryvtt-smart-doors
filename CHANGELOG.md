@@ -1,3 +1,6 @@
+## 1.7.0
+- Fix Wall Config and remove deprecation warnings on Foundry V13.
+
 ## 1.6.2
 - Configuring multiple selected walls works correctly on Foundry V13.
 

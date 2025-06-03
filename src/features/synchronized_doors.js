@@ -46,7 +46,7 @@ function wallConfigFields() {
 // Inject settings for synchronized doors
 export function onRenderWallConfig(wallConfig, html, data) {
     if (!game.settings.get(settingsKey, "synchronizedDoors")) return;
-    if (data.document.door === CONST.WALL_DOOR_TYPES.NONE) return;
+    const hidden = (data.document.door === CONST.WALL_DOOR_TYPES.NONE);
 
     const smartdoorsData = data.document.flags.smartdoors;
 
@@ -74,6 +74,7 @@ export function onRenderWallConfig(wallConfig, html, data) {
         const fields = wallConfigFields().fields;
 
         const group = document.createElement("fieldset");
+        group.hidden = hidden;  // WallConfig#toggleDoorOptions toggles visibility of door controls
         const legend = document.createElement("legend");
         legend.innerText = game.i18n.localize(`smart-doors.settings.synchronizedDoors.name`);
         group.append(legend);
@@ -135,6 +136,13 @@ export async function onWallConfigUpdate(event, formData) {
         await updateSynchronizedDoors(synchronizationGroup, updateData);
 
     return updateResult;
+}
+
+export function onWallConfigChange(_formConfig, event) {
+    if (event.target.name === 'door') {
+        const select = this.form["flags.smartdoors.synchronizationGroup"];
+        select.closest("fieldset").hidden = (Number(event.target.value) === CONST.WALL_DOOR_TYPES.NONE);
+    }
 }
 
 // Update the state of all synchronized doors

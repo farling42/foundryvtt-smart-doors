@@ -3,9 +3,10 @@ import {settingsKey} from "../settings.js";
 
 // Adjust the repositioning formula for the door controls
 export function hookDoorControlReposition() {
+    const prefix = (game.release.generation < 13) ? "" : "foundry.canvas.containers.";
 	libWrapper.register(
 		"smart-doors",
-		"DoorControl.prototype.reposition",
+		`${prefix}DoorControl.prototype.reposition`,
 		function () {
 			let gridSize = this.wall.scene.grid.size;
 			gridSize *= game.settings.get(settingsKey, "doorControlSizeFactor");
