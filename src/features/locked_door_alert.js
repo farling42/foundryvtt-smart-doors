@@ -39,11 +39,21 @@ export function onDoorLeftClick() {
     // Generate no message if the gm attempts to open the door
     if (game.user.isGM) return false;
 
+    
+    // Use logic from Wall._playDoorSound to pick correct sound to play for all clients.
+    const doorSound = CONFIG.Wall.doorSounds[this.wall.document.doorSound];
+    let sounds = doorSound?.['test'];
+    if ( sounds && !Array.isArray(sounds) ) 
+        sounds = [sounds];
+    else if ( !sounds?.length )
+      sounds = [CONFIG.sounds.lock];
+    const sound = sounds[Math.floor(Math.random() * sounds.length)];
+
     // Create and send the chat message
     const message = {
         user    : game.user.id,
         content : game.i18n.localize("smart-doors.ui.lockedDoorAlert"),
-        sound   : CONFIG.sounds.lock,
+        sound   : sound,
         flags   : { smartdoors: { source: { wall: this.wall.id, scene: this.wall.scene.id } } }
     };
     if (game.user.character) message.speaker = { actor: game.user.character };
