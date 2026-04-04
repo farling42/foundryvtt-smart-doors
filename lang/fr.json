@@ -48,7 +48,9 @@
 		"synchronizedDoors": {
 			"description": "Les changements d'état des portes dans le même groupe de synchronisation seront synchronisés entre les scènes. Laissez vide pour désactiver la synchronisation pour cette porte.",
 			"groupName": "Groupe de synchronisation",
-			"synchronizeSecretStatus": "Synchroniser le statut Secret"
+			"groupNameShort": "Groupe de synchronisation",
+			"synchronizeSecretStatus": "Synchroniser le statut Secret",
+			"synchronizeSecretStatusShort": "Synchroniser le statut Secret"
 		}
 	}
 }

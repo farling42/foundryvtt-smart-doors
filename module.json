@@ -2,13 +2,21 @@
 	"id": "smart-doors",
 	"title": "Smart Doors",
 	"description": "Makes doors smarter. Allows doors to synchronize across multiple scenes and sends chat messages when players try to open locked doors.",
-	"version": "1.4.1",
+	"version": "#{VERSION}#",
 	"compatibility": {
-		"minimum": 10,
-		"verified": 10
+		"minimum": 13,
+		"verified": 14
 	},
 	"authors": [
-		{
+        {
+            "name": "Farling",
+            "url": "https://github.com/farling42",
+            "email": "foundryvtt@amusingtime.uk",
+            "discord": "farling",
+            "ko-fi": "farling",
+            "patreon": "amusingtime"
+        },
+        {
 			"name": "Manuel Vögele",
 			"email": "develop@manuel-voegele.de",
 			"discord": "Stäbchenfisch#5107"
@@ -45,11 +53,18 @@
 			"path": "lang/pt-BR.json"
 		}
 	],
-	"url": "https://github.com/manuelVo/foundryvtt-smart-doors",
-	"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-smart-doors/master/module.json",
-	"download": "https://github.com/manuelVo/foundryvtt-smart-doors/archive/v1.4.1.zip",
-	"readme": "https://github.com/manuelVo/foundryvtt-smart-doors/blob/master/README.md",
-	"changelog": "https://github.com/manuelVo/foundryvtt-smart-doors/blob/master/CHANGELOG.md",
-	"bugs": "https://github.com/manuelVo/foundryvtt-smart-doors/issues",
-	"allowBugReporter": true
+    "relationships": {
+	    "recommends": [
+			{
+				"id": "lib-wrapper",
+				"manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json"
+			}
+        ]
+    },
+	"url": "#{URL}#",
+	"manifest": "#{MANIFEST}#",
+	"download": "#{DOWNLOAD}#",
+	"readme": "https://github.com/farling42/foundryvtt-smart-doors/blob/master/README.md",
+	"changelog": "https://github.com/farling42/foundryvtt-smart-doors/blob/master/CHANGELOG.md",
+	"bugs": "https://github.com/farling42/foundryvtt-smart-doors/issues"
 }

@@ -1,3 +1,27 @@
+## 1.8.0
+- Remove support for Foundry 12 and earlier.
+- Mark as verified on Foundry 14.
+
+## 1.7.1
+- When a player attempts to open a locked door, use the configured locked sound for that particular door type.
+
+## 1.7.0
+- Fix Wall Config and remove deprecation warnings on Foundry V13.
+
+## 1.6.2
+- Configuring multiple selected walls works correctly on Foundry V13.
+
+## 1.6.1
+- More compatibility with Foundry V13, although editing multiple doors at once won't copy settings from existing groups properly.
+
+## 1.6.0
+### Compatibility
+- Smart Doors is now compatible with Foundry v13
+
+## 1.5.0
+### Compatibility
+- Smart Doors is now compatible with Foundry v12
+
 ## 1.4.1
 ### Translation
 - Added portugese (Brazil) translation (thanks eunaumtenhoid!)

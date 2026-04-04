@@ -33,7 +33,9 @@
 			"synchronizedDoors": {
 				"description": "同じ同期グループにいる扉はシーンをまたいで状態が同期されます。空の場合はこの扉の同期を無効化します。",
 				"groupName": "同期グループ名",
-				"synchronizeSecretStatus": "シークレット状態同期"
+				"groupNameShort": "同期グループ名",
+				"synchronizeSecretStatus": "シークレット状態同期",
+				"synchronizeSecretStatusShort": "シークレット状態同期"
 			}
 		}
 	}

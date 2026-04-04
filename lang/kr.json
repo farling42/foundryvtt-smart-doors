@@ -1,0 +1,41 @@
+{
+	"smart-doors": {
+		"keybindings": {
+			"toggleSecretDoor": {
+				"name": "비밀 문 전환",
+				"hint": "이 키를 누르고 있는 동안 문을 클릭하면 일반 문과 비밀 문 사이를 전환합니다."
+			}
+		},
+		"settings": {
+			"doorControlSizeFactor": {
+				"name": "문 작동 크기 조정",
+				"hint": "문 작동 아이콘의 크기를 확대하는 비율을 설정합니다."
+			},
+			"highlightSecretDoors": {
+				"name": "비밀 문 음영 설정",
+				"hint": "GM 화면에서 비밀 문을 다른 색상으로 음영 처리하여 일반 문과 구분할 수 있습니다."
+			},
+			"lockedDoorAlert": {
+				"name": "잠긴 문 경고",
+				"hint": "플레이어가 잠긴 문을 열려고 하면 채팅에서 메시지를 보냅니다."
+			},
+			"synchronizedDoors": {
+				"name": "문 동기화",
+				"hint": "여러 문의 상태를 동기화합니다."
+			}
+		},
+		"ui": {
+			"lockedDoorAlert": "이(가) 열려고 시도한 문은 잠겨 있습니다.",
+			"messages": {
+				"migrating": "스마트 도어를 {version}으로 마이그레이션하는 중입니다. 애플리케이션을 닫지 마세요.",
+				"migrationDone": "스마트 도어가 {version} 버전으로 마이그레이션되었습니다.",
+				"unknownVersion": "오류가 발생하여 스마트 도어 마이그레이션에 실패했습니다: 알 수 없는 버전 {version}입니다. 이 오류를 Smart Doors 문제 확인란에 보고하세요. 데이터 손실을 방지하려면 이 오류가 수정될 때까지 이 플러그인을 사용하지 마세요."
+			},
+			"synchronizedDoors": {
+				"description": "동일한 동기화 그룹에 있는 문의 상태 변경은 장면 전체에 걸쳐 동기화됩니다. 이 문의 동기화를 비활성화하려면 비워 둡니다.",
+				"groupName": "그룹 동기화",
+				"synchronizeSecretStatus": "비밀 문 상태 동기화"
+			}
+		}
+	}
+}

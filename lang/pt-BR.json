@@ -34,7 +34,9 @@
 			"synchronizedDoors": {
 				"description": "As mudanças de estado das portas no mesmo grupo de sincronização serão sincronizadas nas cenas. Deixe em branco para desabilitar a sincronização para esta porta.",
 				"groupName": "Grupo de Sincronização",
-				"synchronizeSecretStatus": "Sincronizar status secreto"
+				"groupNameShort": "Grupo de Sincronização",
+				"synchronizeSecretStatus": "Sincronizar status secreto",
+				"synchronizeSecretStatusShort": "Sincronizar status secreto"
 			}
 		}
 	}

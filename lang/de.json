@@ -34,7 +34,9 @@
 			"synchronizedDoors": {
 				"description": "Zustandsänderungen von Türen in der gleichen Synchronisationsgruppe werden szenenübergreifend synchronisiert. Lasse dieses Feld leer, wenn du diese Tür nicht synchronisieren möchtest.",
 				"groupName": "Synchronisationsgruppe",
-				"synchronizeSecretStatus": "Geheimtürstatus synchronisieren"
+				"groupNameShort": "Synchronisationsgruppe",
+				"synchronizeSecretStatus": "Geheimtürstatus synchronisieren",
+				"synchronizeSecretStatusShort": "Geheimtürstatus synchronisieren"
 			}
 		}
 	}
