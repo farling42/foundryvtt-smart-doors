@@ -1,3 +1,7 @@
+## 1.8.0
+- Remove support for Foundry 12 and earlier.
+- Mark as verified on Foundry 14.
+
 ## 1.7.1
 - When a player attempts to open a locked door, use the configured locked sound for that particular door type.
 
