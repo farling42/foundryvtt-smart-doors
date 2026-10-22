@@ -1,3 +1,6 @@
+## 1.8.1
+- Add Polish translations.
+- 
 ## 1.8.0
 - Remove support for Foundry 12 and earlier.
 - Mark as verified on Foundry 14.
